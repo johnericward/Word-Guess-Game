@@ -35,13 +35,13 @@ var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
 var letterChosen = [];
 var wrongLetters = [];
 
-//start message
-var startMessageJS = true;
+// //start message
+// var startMessageJS = true;
 
 
-if (startMessageJS = true) {
+// if (startMessageJS = true) {
 
-} else {
+// } else {
     // This function is run whenever the user presses a key.
     document.onkeyup = function (event) {
 
@@ -114,7 +114,7 @@ if (startMessageJS = true) {
 
     };
     
-};
+//};
 
 
 
