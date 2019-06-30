@@ -1,0 +1,135 @@
+<!--
+
+Use key events to listen for the letters that your players will type.
+
+Display the following on the page:
+
+Press any key to get started!
+
+Wins: (# of times user guessed the word correctly).
+
+If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
+
+As the user guesses the correct letters, reveal them: m a d o _ _ a.
+
+Number of Guesses Remaining: (# of guesses remaining for the user).
+
+Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H).
+
+After the user wins/loses the game should automatically choose another word and make the user play it.
+
+Word Guess Game Bonuses
+
+Play a sound or song when the user guesses their word correctly, like in our demo.
+Write some stylish CSS rules to make a design that fits your game's theme.
+HARD MODE: Organize your game code as an object, except for the key events to get the letter guessed. This will be a challenge if you haven't coded with JavaScript before, but we encourage anyone already familiar with the language to try this out.
+Save your whole game and its properties in an object.
+Save any of your game's functions as methods, and call them underneath your object declaration using event listeners.
+Don't forget to place your global variables and functions above your object.
+Remember: global variables, then objects, then calls.
+Definitely talk with a TA or your instructor if you get tripped up during this challenge.
+
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ======================================================================= 
+             
+             _________          ____                ____
+            |   ______|         \   \    ______    /   /
+            |  |_____            \   \  /      \  /   /
+            |  ______|            \   \/   /\   \/   /
+            |  |_______      __    \      /  \      /    __
+            |__________|    |__|    \____/    \____/    |__|
+
+
+     ======================================================================= -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hang Man</title>
+    <!-- bootstrap linked css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--  end of bootstrap css link -->
+    <!-- my linked css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap linked js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- my linked js -->
+    <script src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+    <!-- TITLE -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+                <h1 class="titleName"> Hang Man </h1>
+                <div class="subtitle">
+                    <h6>by</h6>
+                    <h5>John Eric Ward</h5>
+                    <h5><span id="startMessageCSS"></span></h5>
+                </div>
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg"></div>
+            <div class="col-lg-10">
+                <div class="blankSpacesBox">
+                    <h2>
+                        <span id="blankSpaces"></span>
+                    </h2>
+
+                    <h1>
+                        <span id="results"></span>
+                        <span id="losingResults"></span>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-lg"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <h3>Score: <span id=scoreCSS>0</span></h3>
+                <br>
+                <h3>Wrong Letters: <span id="wrongLettersCSS"></span></h3>
+                <br>
+                <h3>Strikes: <span id="strikesCSS">0</span>/10 </h3>
+            </div>
+            <div class="col-lg-10">
+                <div class="letterPressCSS">
+                    <h2>
+                        <div id="letterPress"></div>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

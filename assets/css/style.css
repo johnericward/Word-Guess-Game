@@ -1,0 +1,36 @@
+.titleName {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.blankSpacesBox {
+    text-align: center;
+    text-size: 50px;
+}
+
+.letterPressCSS {
+    text-align: center;
+}
+
+#wrongLettersCSS {
+    color: rgb(145, 7, 145);
+}
+
+#results {
+    color: rgb(11, 249, 126);
+}
+
+#losingResults {
+    color: rgb(242, 21, 106);
+}
+
+#blankSpaces {
+    color: rgb(13, 148, 206);
+}
+
+#startMessageCSS {
+    color: rgb(13, 148, 206);
+}
